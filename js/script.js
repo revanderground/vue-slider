@@ -34,18 +34,17 @@ const root = new Vue (
         methods:{
             Next: function(currentIndex){
                 currentIndex++
-                result=currentIndex;
+                result=currentIndex
     
+            },
+
+            Prev: function(currentIndex){
+                currentIndex--
+                result=currentIndex
                 
             }
 
-            Previous: function(currentIndex){
-                currentIndex--;
-                result=currentIndex;
-                
-            }
-
-        }
+        },
 
     }
 );
