@@ -32,21 +32,23 @@ const root = new Vue (
             ]
         },
         methods:{
-            Next: function(currentIndex){
-                currentIndex++;
-                result=currentIndex;
-                if (currentIndex=5){
-                 currentIndex=0   
+            Next: function(){
+                
+                if (this.currentIndex==this.slides.length-1){
+                 this.currentIndex=0   
+                } else {
+                    this.currentIndex++;
                 }
     
             },
 
-            Prev: function(currentIndex){
-                currentIndex--;
-                result=currentIndex;
-                if (currentIndex=-1){
-                    currentIndex=4   
-                   }
+            Prev: function(){
+           
+                if (this.currentIndex==0){
+                    this.currentIndex=this.slides.length-1   
+                } else{
+                    this.currentIndex--;
+                }
                 
             }
 
