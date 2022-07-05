@@ -3,6 +3,7 @@ const root = new Vue (
         el: '#app',
         data: {
             currentIndex:0,
+            
             slides: [
                 {
                     image: 'img/01.jpg',
