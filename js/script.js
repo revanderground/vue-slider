@@ -2,7 +2,7 @@ const root = new Vue (
     {
         el: '#app',
         data: {
-            
+            currentIndex:0,
             slides: [
                 {
                     image: 'img/01.jpg',
@@ -32,11 +32,21 @@ const root = new Vue (
             ]
         },
         methods:{
-            Next: function(){
-                console.log("Hello World");
+            Next: function(currentIndex){
+                currentIndex++
+                result=currentIndex;
+    
+                
+            }
+
+            Previous: function(currentIndex){
+                currentIndex--;
+                result=currentIndex;
+                
             }
 
         }
 
     }
 );
+
