@@ -33,14 +33,20 @@ const root = new Vue (
         },
         methods:{
             Next: function(currentIndex){
-                currentIndex++
-                result=currentIndex
+                currentIndex++;
+                result=currentIndex;
+                if (currentIndex=5){
+                 currentIndex=0   
+                }
     
             },
 
             Prev: function(currentIndex){
-                currentIndex--
-                result=currentIndex
+                currentIndex--;
+                result=currentIndex;
+                if (currentIndex=-1){
+                    currentIndex=4   
+                   }
                 
             }
 
